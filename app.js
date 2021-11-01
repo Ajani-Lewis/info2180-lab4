@@ -18,10 +18,17 @@ window.onload = function(){
 
     }*/
 
+    function sanitizeStr(str){
+        str = str.replace(/[^a-z0-9áéíóúñü \.,_-]/gim,"");
+        return str.trim();
+    }
+
     function searchBtnClick(e){
+        e.preventDefault();
+
         const htr = new XMLHttpRequest();
 
-        search = document.getElementById("bar").value;
+        search = sanitizeStr(document.getElementById("bar").value);
 
         htr.onreadystatechange = function(){
             if(this.readyState == 4 && this.status == 200){

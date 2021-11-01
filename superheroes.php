@@ -69,6 +69,7 @@ $superheroes = [
 
 <?php
     $term = $_GET["q"];
+    
 
     $found = -1;
     $data = [];
