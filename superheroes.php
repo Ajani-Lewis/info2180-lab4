@@ -90,7 +90,7 @@ $superheroes = [
         
     <p><?php echo($data["biography"]."<br>");?></p>
     <?php }else{
-            echo($errMessage);
+            echo('<span style="color:red;">'.$errMessage.'</span>');
     } ?>
 <?php }else{ ?>
     <ul>

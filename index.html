@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="app.js"></script>
-</head>
 
-<body>
-    <header>
-        <h1>Avengers Character Search</h1>
-    </header>
-    
-    <div class="search">
-        <h4>Search by Full Name or Alias</h4>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Avengers Assemble</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="app.js"></script>
+    </head>
 
-        <div id = searchbar>
-            <input id="bar" type="text" name="searchbar" placeholder="e.g Captain America or Steve Rogers"> 
-            <button name="submitbtn" id="searchbtn">Search</button>
-        </div>
-    </div>
+    <body>
+        <header>
+            <div class="container">
+                <h1>Avengers Character Search</h1>
+            </div>
+        </header>
 
-    <hr>
+        <section class="search">
+            <div class="container">
+                <h3>Search by Full Name or Alias</h3>
 
-    <div class="result">
-        <h2>Result</h2>
-        <div id="message"></div>
-    </div>
-</body>
+                <div id = searchbar>
+                    <input id="bar" type="text" name="searchbar" placeholder="e.g Captain America or Steve Rogers"> 
+                    <button name="submitbtn" id="searchbtn">Search</button>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class = result>
+            <div class="container">
+                <h2>Result</h2>
+                <div id="message"><h3>Avengers Assemble!!</h3></div>
+            </div>
+        </section>
+
+    </body>
 </html>

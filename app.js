@@ -20,7 +20,6 @@ window.onload = function(){
 
     function searchBtnClick(e){
         const htr = new XMLHttpRequest();
-        console.log("button clicked");
 
         search = document.getElementById("bar").value;
 
