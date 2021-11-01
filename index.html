@@ -8,9 +8,26 @@
     <link rel="stylesheet" href="styles.css">
     <script src="app.js"></script>
 </head>
-<body>
-    <h1>Avengers Character Search</h1>
 
-    <button type="button" id="searchbtn">Search</button>
+<body>
+    <header>
+        <h1>Avengers Character Search</h1>
+    </header>
+    
+    <div class="search">
+        <h4>Search by Full Name or Alias</h4>
+
+        <div id = searchbar>
+            <input id="bar" type="text" name="searchbar" placeholder="e.g Captain America or Steve Rogers"> 
+            <button name="submitbtn" id="searchbtn">Search</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="result">
+        <h2>Result</h2>
+        <div id="message"></div>
+    </div>
 </body>
 </html>
